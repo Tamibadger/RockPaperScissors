@@ -16,13 +16,8 @@ function getComputerChoice(){
     return(computerInput);
 }
 
-function capitalize(s){
-const capitalizedString= s[0].toUpperCase+ s.slice(1);
-return capitalizedString;
-}
 const computerSelection= getComputerChoice();
-let playerSelection= capitalize(prompt("Please choose Rock,Paper or Scissors"));
-
+const playerSelection= prompt("Please choose Rock,Paper or Scissors");
 
 function playRound(playerSelection,computerSelection){
     switch(playerSelection){
